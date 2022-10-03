@@ -1,1 +1,1 @@
-git log -5 --format="%H"
+git rev-list --all -5
