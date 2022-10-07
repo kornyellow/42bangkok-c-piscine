@@ -6,13 +6,22 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 10:24:47 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/06 10:32:41 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/06 23:35:54 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 void	ft_is_negative(int n);
+/*
+int		main(void)
+{
+	ft_is_negative(-1);
+	ft_is_negative(0);
+	ft_is_negative(1);
+	return (0);
+}
+*/
 
 void	ft_is_negative(int n)
 {

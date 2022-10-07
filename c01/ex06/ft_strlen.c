@@ -1,34 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 10:18:25 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/06 23:35:17 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/07 13:57:23 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/07 15:40:32 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_reverse_alphabet(void);
+int	ft_strlen(char *str);
 /*
-int		main(void)
-{
-	ft_print_reverse_alphabet();
-	return (0);
+#include <stdio.h>
+int main() {
+	char str[] = "Hello, World!";
+	printf("\"%s\" = %d\n", str, ft_strlen(str));
+	return 0;
 }
 */
 
-void	ft_print_reverse_alphabet(void)
+int	ft_strlen(char *str)
 {
-	char	c;
-
-	c = 'z';
-	while (c >= 'a')
+	if (*str != '\0')
 	{
-		write(1, &c, 1);
-		c --;
+		return (1 + ft_strlen(++str));
 	}
+	return (0);
 }

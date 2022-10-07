@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 10:18:25 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/06 23:35:17 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/07 13:51:36 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/07 15:46:59 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_reverse_alphabet(void);
+void	ft_ultimate_div_mod(int *a, int *b);
 /*
-int		main(void)
-{
-	ft_print_reverse_alphabet();
-	return (0);
+#include <stdio.h>
+int main() {
+	int a = 21;
+	int b = 10;
+	printf("Before : a=%d b=%d\n", a, b);
+	ft_ultimate_div_mod(&div, &mod);
+	printf("After  : a=%d b=%d\n", a, b);
+	return 0;
 }
 */
 
-void	ft_print_reverse_alphabet(void)
+void	ft_ultimate_div_mod(int *a, int *b)
 {
-	char	c;
+	int	div;
+	int	mod;
 
-	c = 'z';
-	while (c >= 'a')
-	{
-		write(1, &c, 1);
-		c --;
-	}
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
 }

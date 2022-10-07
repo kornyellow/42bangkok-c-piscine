@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 10:40:02 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/06 22:49:49 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/06 23:36:29 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 
 void	ft_print_comb(void);
 void	kn_print_comb_sub(char a, char b, char c);
+/*
+int		main(void)
+{
+	ft_print_comb();
+	return (0);
+}
+*/
 
 void	ft_print_comb(void)
 {
