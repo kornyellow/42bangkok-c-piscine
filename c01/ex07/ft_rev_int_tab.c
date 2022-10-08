@@ -6,17 +6,17 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 14:06:52 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/07 15:00:35 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/08 13:32:27 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_rev_int_tab(int *tab, int size);
 void	kn_rev_int_tab(int *tab, int size, int i);
-/*
+/* TODO: C01:ex07 -> Segmentation Fault
 #include <stdio.h>
 int main() {
-	int tab[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-	int size = 10;
+	int tab[] = {-2, -2, 0};
+	int size = 3;
 
 	printf("Before : ");
 	for (int i = 0; i < size; i++)
