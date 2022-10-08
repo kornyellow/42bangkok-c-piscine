@@ -6,14 +6,14 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 15:01:44 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/08 13:32:37 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/08 14:34:49 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_sort_int_tab(int *tab, int size);
 void	kn_sort_int_tab(int *tab, int size, int i);
 int		kn_find_min(int *tab, int size, int min);
-/* TODO: C01:ex08 -> Segmentation Fault
+/* TODO: c01:ex08 -> Segmentation Fault
 #include <stdio.h>
 int main() {
 	int tab[] = {3, 4, 2, 0, 9, 7, 5, 6, 8, 1};

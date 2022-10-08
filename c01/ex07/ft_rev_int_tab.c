@@ -6,13 +6,13 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 14:06:52 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/08 13:32:27 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/08 14:34:37 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_rev_int_tab(int *tab, int size);
 void	kn_rev_int_tab(int *tab, int size, int i);
-/* TODO: C01:ex07 -> Segmentation Fault
+/* TODO: c01:ex07 -> Segmentation Fault
 #include <stdio.h>
 int main() {
 	int tab[] = {-2, -2, 0};
