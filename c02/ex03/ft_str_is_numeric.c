@@ -6,12 +6,12 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 15:14:01 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 17:40:28 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:17:11 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_numeric(char *str);
-
+/*
 #include <stdio.h>
 int main() {
 	char str1[] = "Hello";
@@ -30,7 +30,7 @@ int main() {
 
 	return 0;
 }
-
+*/
 
 int	ft_str_is_numeric(char *str)
 {

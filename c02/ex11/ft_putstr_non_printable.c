@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:20:11 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 17:46:43 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:16:11 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	kn_putint_hexadecimal(int quotient, int first);
 void	ft_putstr_non_printable(char *str);
-
+/*
 #include <stdio.h>
 int main()
 {
 	char str[] = "Coucou\ntu \nvas bien ?";
 	ft_putstr_non_printable(str);
 }
-
+*/
 
 void	kn_putint_hexadecimal(int quotient, int first)
 {

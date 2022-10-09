@@ -6,12 +6,12 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 15:35:20 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 17:42:34 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:16:31 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strupcase(char *str);
-
+/*
 #include <stdio.h>
 int main() {
 	char str1[] = "Hello";
@@ -33,7 +33,7 @@ int main() {
 
 	return 0;
 }
-
+*/
 
 char	*ft_strupcase(char *str)
 {

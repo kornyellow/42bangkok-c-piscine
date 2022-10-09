@@ -6,12 +6,12 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:02:56 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 17:49:56 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:15:44 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
-
+/*
 #include <stdio.h>
 #include <string.h>
 int main() {
@@ -40,26 +40,32 @@ int main() {
 
 	return 0;
 }
-
+*/
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int	i;
+	char			*d;
+	char			*s;
+	unsigned int	n;
 
-	i = 0;
-	while (i == 0 || (i != size - 1 && *(src + i - 1) != '\0'))
+	d = dest;
+	s = src;
+	n = size;
+	if (n != 0)
 	{
-		*(dest + i) = *(src + i);
-		i ++;
+		while (--n != 0)
+		{
+			*d++ = *s++;
+			if (*d == '\0' && *s == '\0')
+				break ;
+		}
 	}
-	while (i != size)
+	if (n == 0)
 	{
-		*(dest + i) = '\0';
-		i ++;
+		if (size != 0)
+			*d = '\0';
+		while (*s != '\0')
+			s++;
 	}
-	while (*(src + i) != '\0')
-	{
-		i ++;
-	}
-	return (i);
+	return (s - src - 1);
 }

@@ -6,12 +6,12 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 15:19:35 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 17:41:12 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:16:51 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_uppercase(char *str);
-
+/*
 #include <stdio.h>
 int main() {
 	char str1[] = "Hello";
@@ -30,7 +30,7 @@ int main() {
 
 	return 0;
 }
-
+*/
 
 int	ft_str_is_uppercase(char *str)
 {

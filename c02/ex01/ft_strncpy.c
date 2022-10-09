@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 16:54:49 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 17:50:37 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:17:31 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,17 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n);
 #include <stdio.h>
 #include <string.h>
 int main() {
-
-	unsigned int len = 8;
-	char src[] = "Hello";
-	char dest[8];
+	unsigned int len = 10;
+	char src[] = "ABCDEF";
+	char dest[len];
 	char *ret;
 
-	dest[5] = 'X';
-	dest[6] = 'X';
-	dest[7] = 'X';
 	printf("Destination information (Before):\n");
-	for (int i = 0; i < 8; i++)
+	for (unsigned int i = 0; i < len; i++)
 		printf("[%d] Raw:%2c , ASCII:%3d\n", i, dest[i], dest[i]);
 
-	ret = ft_strncpy(dest, src, len);
+	ret = ft_strncpy(dest, src, 5);
+
 	printf("\nResult of ft_strncpy() len %d:\n", len);
 	printf("Source      Pointer : %p\n", src);
 	printf("Destination Pointer : %p\n", dest);
@@ -37,7 +34,7 @@ int main() {
 	printf("Returned Destination Pointer : %p\n", ret);
 
 	printf("\nDestination information (After):\n");
-	for (int i = 0; i < 8; i++)
+	for (unsigned int i = 0; i < len; i++)
 		printf("[%d] Raw:%2c , ASCII:%3d\n", i, dest[i], dest[i]);
 
 	return 0;
@@ -46,18 +43,16 @@ int main() {
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	i;
+	char	*ret;
 
-	i = 0;
-	while (i == 0 || (i != n && *(src + i - 1) != '\0'))
+	ret = dest;
+	if (dest == NULL && src == NULL)
+		return (NULL);
+	while (*src && n--)
 	{
-		*(dest + i) = *(src + i);
-		i ++;
+		*dest = *src;
+		dest ++;
+		src ++;
 	}
-	while (i != n)
-	{
-		*(dest + i) = '\0';
-		i ++;
-	}
-	return (dest);
+	return (ret);
 }
