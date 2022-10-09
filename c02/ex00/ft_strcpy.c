@@ -6,12 +6,12 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:35:57 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/08 17:05:27 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 17:48:16 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src);
-/*
+
 #include <stdio.h>
 #include <string.h>
 int main() {
@@ -26,7 +26,7 @@ int main() {
 	for (int i = 0; i < 8; i++)
 		printf("[%d] Raw:%2c , ASCII:%3d\n", i, dest[i], dest[i]);
 
-	ret = ft_strcpy(dest, src);
+	ret = strcpy(dest, src);
 	printf("\nResult of ft_strcpy():\n");
 	printf("Source      Pointer : %p\n", src);
 	printf("Destination Pointer : %p\n", dest);
@@ -40,7 +40,7 @@ int main() {
 
 	return 0;
 }
-*/
+
 
 char	*ft_strcpy(char *dest, char *src)
 {

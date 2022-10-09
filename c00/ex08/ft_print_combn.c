@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:16:52 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/06 23:39:52 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 16:58:20 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,16 @@ void	ft_print_combn(int n);
 void	kn_print_combn(int n, int i, char arr[], int *is_first);
 void	kn_print_digits(int n, char arr[]);
 void	kn_write(char x);
-/*
+
 int		main(void)
 {
-	ft_print_combn(1);
-	ft_print_combn(2);
+	//ft_print_combn(1);
+	//ft_print_combn(2);
 	ft_print_combn(3);
-	ft_print_combn(4);
+	//ft_print_combn(4);
 	return (0);
 }
-*/
+
 
 void	ft_print_combn(int n)
 {
