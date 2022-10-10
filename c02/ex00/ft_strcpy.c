@@ -6,12 +6,12 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 14:35:57 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 18:17:42 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 19:45:13 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src);
-/*
+
 #include <stdio.h>
 #include <string.h>
 int main() {
@@ -40,7 +40,7 @@ int main() {
 
 	return 0;
 }
-*/
+
 
 char	*ft_strcpy(char *dest, char *src)
 {

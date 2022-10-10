@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:16:52 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 16:58:20 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 19:09:57 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,14 @@ void	ft_print_combn(int n);
 void	kn_print_combn(int n, int i, char arr[], int *is_first);
 void	kn_print_digits(int n, char arr[]);
 void	kn_write(char x);
-
+/* TODO: c00:ex08 -> Non-printable characters found
 int		main(void)
 {
-	//ft_print_combn(1);
-	//ft_print_combn(2);
-	ft_print_combn(3);
-	//ft_print_combn(4);
+	for (int i = 0; i < 9; i++)
+		ft_print_combn(i+1);
 	return (0);
 }
-
+*/
 
 void	ft_print_combn(int n)
 {

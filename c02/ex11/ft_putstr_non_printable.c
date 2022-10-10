@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:20:11 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 18:16:11 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:39:49 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putstr_non_printable(char *str);
 #include <stdio.h>
 int main()
 {
-	char str[] = "Coucou\ntu \nvas bien ?";
+	char str[] = "Coucou\b\t\t\t\f\f\f\r\r\ntu \nvas bien ?";
 	ft_putstr_non_printable(str);
 }
 */
