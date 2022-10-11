@@ -6,13 +6,13 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:48:46 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/11 20:21:35 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/11 21:27:32 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcapitalize(char *str);
 int		kn_is_alpha(char c);
-
+/*
 #include <stdio.h>
 int main() {
 	char str1[] = "Hello";
@@ -34,7 +34,7 @@ int main() {
 
 	return 0;
 }
-
+*/
 
 int	kn_is_alpha(char c)
 {

@@ -6,12 +6,12 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:02:56 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 18:15:44 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/11 20:59:33 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
-/*
+/* TODO: c02:ex10 -> KO
 #include <stdio.h>
 #include <string.h>
 int main() {
