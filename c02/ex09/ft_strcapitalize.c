@@ -6,19 +6,19 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 17:48:46 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 17:49:40 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/11 20:21:35 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcapitalize(char *str);
 int		kn_is_alpha(char c);
-/*
+
 #include <stdio.h>
 int main() {
 	char str1[] = "Hello";
 	char str2[] = "korn ok hello world my name is korn";
 	char str3[] = "KORnN";
-	char str4[] = "";
+	char str4[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
 	char str5[] = "ASDASDSA ASD AS ASDASasasdas ASDA !@ ! @#R)Q#)SAS)FJ@ OJ QW";
 
 	printf("Before %s\n", str1);
@@ -34,11 +34,11 @@ int main() {
 
 	return 0;
 }
-*/
+
 
 int	kn_is_alpha(char c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 	{
 		return (1);
 	}

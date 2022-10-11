@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 16:54:49 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/09 18:17:31 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/11 20:16:17 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	char	*ret;
 
 	ret = dest;
-	if (dest == NULL && src == NULL)
-		return (NULL);
+	if (!dest && !src)
+		return (0);
 	while (*src && n--)
 	{
 		*dest = *src;
