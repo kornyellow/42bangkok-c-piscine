@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 16:54:49 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/12 15:54:21 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/12 22:18:52 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,15 @@ int main() {
 	char dest[len];
 	char *ret;
 
+	dest[6] = 'A';
+	dest[7] = 'A';
+	dest[8] = 'A';
+	dest[9] = 'A';
 	printf("Destination information (Before):\n");
 	for (unsigned int i = 0; i < len; i++)
 		printf("[%d] Raw:%2c , ASCII:%3d\n", i, dest[i], dest[i]);
 
-	ret = ft_strncpy(dest, src, 5);
+	ret = ft_strncpy(dest, src, 6);
 
 	printf("\nResult of ft_strncpy() len %d:\n", len);
 	printf("Source      Pointer : %p\n", src);
@@ -43,21 +47,18 @@ int main() {
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	char	*ret;
+	unsigned int	i;
 
-	ret = dest;
-	if (!dest && !src)
-		return (0);
-	while (*src && n--)
+	i = 0;
+	while (*(src + i) != 0 && i < n)
 	{
-		*dest = *src;
-		dest ++;
-		src ++;
+		*(dest + i) = *(src + i);
+		i ++;
 	}
-	while (*dest != 0)
+	while (i < n)
 	{
-		*dest = 0;
-		dest ++;
+		*(dest + i) = 0;
+		i++;
 	}
-	return (ret);
+	return (dest);
 }

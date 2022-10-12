@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 14:06:52 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/11 21:06:23 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/12 20:39:21 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@ void	kn_rev_int_tab(int *tab, int size, int i);
 /* TODO: c01:ex07 -> Segmentation Fault
 #include <stdio.h>
 int main() {
-	int tab[] = {10, 5, 3};
-	int size = 3;
+	int tab[] = {1, 2, 3};
+	int size = 2;
 
 	printf("Before : ");
 	for (int i = 0; i < size; i++)
@@ -36,6 +36,8 @@ int main() {
 
 void	ft_rev_int_tab(int *tab, int size)
 {
+	if (!tab)
+		return ;
 	kn_rev_int_tab(tab, size, size);
 }
 

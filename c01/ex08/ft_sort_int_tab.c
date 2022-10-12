@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 15:01:44 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/11 21:05:56 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/12 20:40:49 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ int main() {
 
 void	ft_sort_int_tab(int *tab, int size)
 {
+	if (!tab)
+		return ;
 	kn_sort_int_tab(tab, size, 0);
 }
 

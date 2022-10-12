@@ -6,13 +6,13 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 22:42:12 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/11 23:01:11 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/12 20:27:49 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strstr(char *str, char *to_find);
 char	*kn_strstr(char *str, char *to_find, char *last_find);
-/*
+/* TODO: c03:ex04 -> KO (ft_strstr("kornyellow", "low") -> unexpected output)
 #include <stdio.h>
 #include <string.h>
 int main()

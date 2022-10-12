@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 23:55:55 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/12 00:44:45 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/12 20:55:08 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ void	kn_putchar_recur(int nbr, int base, char *base_str);
 void	ft_putnbr_base(int nbr, char *base);
 int		kn_strlen(char *str);
 int		kn_verify(char *str);
-/*
+/* TODO: c04:ex04 -> KO
 #include <stdio.h>
 int main()
 {
-	char base[] = "0123456789";
-	ft_putnbr_base(32, base);
+	char base[] = "0123456789ABCDEF";
+	ft_putnbr_base(-255, base);
 	return 0;
 }
 */
