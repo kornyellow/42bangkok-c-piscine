@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 16:54:49 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/11 20:16:17 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/12 15:54:21 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,11 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		*dest = *src;
 		dest ++;
 		src ++;
+	}
+	while (*dest != 0)
+	{
+		*dest = 0;
+		dest ++;
 	}
 	return (ret);
 }
