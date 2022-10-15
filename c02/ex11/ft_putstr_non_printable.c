@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:20:11 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/11 20:59:48 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/15 14:02:14 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,47 +23,18 @@ int main()
 }
 */
 
-void	kn_putint_hexadecimal(int quotient, int first)
-{
-	char	temp;
-
-	if (quotient == 0)
-	{
-		return ;
-	}
-	if (first && quotient < 16)
-	{
-		temp = '0';
-		write(1, &temp, 1);
-	}
-	first = 0;
-	temp = quotient % 16;
-	if (temp < 10)
-	{
-		temp = temp + 48;
-	}
-	else
-	{
-		temp = temp + 87;
-	}
-	quotient = quotient / 16;
-	kn_putint_hexadecimal(quotient, first);
-	write(1, &temp, 1);
-}
-
 void	ft_putstr_non_printable(char *str)
 {
-	char	bkslash;
 	int		i;
 
-	bkslash = '\\';
 	i = 0;
 	while (*(str + i) != '\0')
 	{
-		if (*(str + i) <= 31 || *(str + i) == 127)
+		if (*(str + i) <= ' ' || *(str + i) == 127)
 		{
-			write(1, &bkslash, 1);
-			kn_putint_hexadecimal(*(str + i), 1);
+			write(1, "//", 1);
+			write(1, "0123456789abcdef"[*(str + i) / 16], 1);
+			write(1, "0123456789abcdef"[*(str + i) % 16], 1);
 		}
 		else
 		{

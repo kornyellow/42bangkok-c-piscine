@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 16:02:56 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/11 20:59:33 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/15 14:08:18 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,28 +44,21 @@ int main() {
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	char			*d;
-	char			*s;
-	unsigned int	n;
+	unsigned int	len;
+	unsigned int	i;
 
-	d = dest;
-	s = src;
-	n = size;
-	if (n != 0)
+	i = 0;
+	len = 0;
+	while (src[len] != '\0')
+		len ++;
+	if (size != 0)
 	{
-		while (--n != 0)
+		while (src[i] != 0 && i < (size - 1))
 		{
-			*d++ = *s++;
-			if (*d == '\0' && *s == '\0')
-				break ;
+			dest[i] = src[i];
+			i ++;
 		}
+		dest[i] = 0;
 	}
-	if (n == 0)
-	{
-		if (size != 0)
-			*d = '\0';
-		while (*s != '\0')
-			s++;
-	}
-	return (s - src - 1);
+	return (i);
 }
