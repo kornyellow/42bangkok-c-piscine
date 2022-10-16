@@ -7,7 +7,6 @@ gcc $C_FLAG $I_FILE -o $O_FILE
 
 if [ $? -eq 0 ];
 then
-	tput setaf 3; tput bold; cat ~/git/piscine-2022/scripts/success.txt
-	afplay ~/sounds/rub_500_baht.wav &
+	bash ~/git/piscine-2022/scripts/500baht.sh
 fi
 
