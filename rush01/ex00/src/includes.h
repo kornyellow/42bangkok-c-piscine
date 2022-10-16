@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   includes.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 10:08:15 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/16 19:37:33 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/15 14:57:59 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/16 19:24:38 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef INCLUDES_H
+# define INCLUDES_H
 
-void	ft_putchar(char c);
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdio.h>
 
-int		main(void)
-{
-	ft_putchar('A');
-	return (0);
-}
+# define SIZE 4
 
+# define SUCCESS 0
+# define ERROR_ARGUMENT_COUNT 1
+# define ERROR_ARGUMENT_INVALID 2
+# define ERROR_NO_SOLUTION 3
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+#endif
