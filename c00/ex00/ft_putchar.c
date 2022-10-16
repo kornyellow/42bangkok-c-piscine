@@ -6,20 +6,20 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 10:08:15 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/16 22:04:54 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/16 22:50:13 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 void	ft_putchar(char c);
-
+/*
 int		main(void)
 {
 	ft_putchar('A');
 	return (0);
 }
-
+*/
 
 void	ft_putchar(char c)
 {
