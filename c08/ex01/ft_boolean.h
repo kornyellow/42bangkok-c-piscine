@@ -1,41 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_boolean.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 02:18:17 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/19 18:52:12 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/19 18:10:15 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/19 19:25:57 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#ifndef FT_BOOLEAN_H
+# define FT_BOOLEAN_H
 
-int	*ft_range(int min, int max);
-/*
-#include <stdio.h>
-int main()
+# include <unistd.h>
+
+typedef enum t_bool
 {
-	int *list;
-	list = ft_range(5, 10);
-	for (int i = 0; i < 5; i++)
-		printf("%d ", list[i]);
-	printf("\n");
-	free(list);
-}
-*/
+	FALSE,
+	TRUE
+}	t_bool;
 
-int	*ft_range(int min, int max)
-{
-	int	*ret;
-	int	*arr;
+# define EVEN(nbr) ((nbr % 2 == 0) ? TRUE : FALSE)
 
-	if (min >= max)
-		return (0);
-	arr = malloc(sizeof(int) * (max - min));
-	ret = arr;
-	while (min < max)
-		*arr++ = min++;
-	return (ret);
-}
+# define TRUE 1
+# define FALSE 0
+# define SUCCESS 1
+
+# define EVEN_MSG "I have an even number of arguments.\n"
+# define ODD_MSG "I have an odd number of arguments.\n"
+
+#endif

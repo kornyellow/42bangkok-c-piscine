@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 17:42:17 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/12 19:47:07 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/17 16:28:53 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,12 @@ int main()
 
 int	ft_sqrt(int nb)
 {
-	int	half_nb;
 	int	to_find;
 
 	if (nb <= 0 || nb > 2147395600)
 	{
 		return (0);
 	}
-	half_nb = nb / 2;
 	to_find = 1;
 	while (to_find <= 46340)
 	{

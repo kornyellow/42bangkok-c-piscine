@@ -1,41 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 02:18:17 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/19 18:52:12 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/19 19:14:55 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/19 19:19:01 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "ft_boolean.h"
 
-int	*ft_range(int min, int max);
-/*
-#include <stdio.h>
-int main()
+void	ft_putstr(char *str)
 {
-	int *list;
-	list = ft_range(5, 10);
-	for (int i = 0; i < 5; i++)
-		printf("%d ", list[i]);
-	printf("\n");
-	free(list);
+	while (*str)
+		write(1, str++, 1);
 }
-*/
 
-int	*ft_range(int min, int max)
+t_bool	ft_is_even(int nbr)
 {
-	int	*ret;
-	int	*arr;
+	if (EVEN(nbr))
+		return (TRUE);
+	return (FALSE);
+}
 
-	if (min >= max)
-		return (0);
-	arr = malloc(sizeof(int) * (max - min));
-	ret = arr;
-	while (min < max)
-		*arr++ = min++;
-	return (ret);
+int	main(int argc, char **argv)
+{
+	(void) argv;
+	if (ft_is_even(argc - 1) == TRUE)
+		ft_putstr(EVEN_MSG);
+	else
+		ft_putstr(ODD_MSG);
+	return (SUCCESS);
 }

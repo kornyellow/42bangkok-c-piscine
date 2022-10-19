@@ -6,60 +6,63 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 19:01:49 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/12 20:27:16 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/19 18:32:54 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_prime(int nb);
 int	ft_find_next_prime(int nb);
-/* TODO: c05:ex07 -> Todo
+/*
 #include <stdio.h>
 int main()
 {
-	printf("%d\n", ft_is_prime(29));
-	printf("Expect: 13 => 17\n");
+	printf("Expect: -3738 => 2\n");
+	printf("Result: -3738 => %d\n", ft_find_next_prime(-3738));
+	printf("Expect: 0 => 2\n");
+	printf("Result: 0 => %d\n", ft_find_next_prime(0));
+	printf("Expect: 1 => 2\n");
+	printf("Result: 1 => %d\n", ft_find_next_prime(1));
+	printf("Expect: 2 => 2\n");
+	printf("Result: 2 => %d\n", ft_find_next_prime(2));
+	printf("Expect: 13 => 13\n");
 	printf("Result: 13 => %d\n", ft_find_next_prime(13));
-	printf("Expect: 5 => 7\n");
-	printf("Result: 5 => %d\n", ft_find_next_prime(5));
-	printf("Expect: 3 => 5\n");
-	printf("Result: 3 => %d\n", ft_find_next_prime(3));
-	printf("Expect: 19 => 23\n");
-	printf("Result: 19 => %d\n", ft_find_next_prime(19));
-	printf("Expect: 97 => 23\n");
-	printf("Result: 97 => %d\n", ft_find_next_prime(97));
-	int i = 1;
-	while (1)
-	{
-		i = ft_find_next_prime(i);
-		printf("%d\n", i);
-	}
-	return 0;
+	printf("Expect: 284 => 293\n");
+	printf("Result: 284 => %d\n", ft_find_next_prime(284));
+	printf("Expect: 2147483643 => 2147483647\n");
+	printf("Result: 2147483643 => %d\n", ft_find_next_prime(2147483643));
+	printf("Expect: 2147483647 => 2147483647\n");
+	printf("Result: 2147483647 => %d\n", ft_find_next_prime(2147483647));
 }
 */
 
 int	ft_is_prime(int nb)
 {
+	int	prime;
 	int	i;
 
-	if (nb <= 1)
+	if (nb <= 0)
 		return (0);
-	if (nb <= 3)
-		return (1);
-	if (nb % 2 == 0 || nb % 3 == 0)
-		return (0);
-	i = 5;
-	while (i * i <= nb)
-		if (nb % i == 0 || nb % (i + 2) == 0)
-			return (0);
-		i += 6;
-	return (1);
+	i = 3;
+	if (nb % 2 == 0)
+		prime = nb == 2;
+	else
+		prime = nb != 1;
+	while (prime && i <= nb / i)
+	{
+		prime = nb % i != 0;
+		i += 2;
+	}
+	return (prime);
 }
 
 int	ft_find_next_prime(int nb)
 {
-	while (!ft_is_prime(++nb))
-	{
-		printf("nb = %d\n", nb);
-	}
+	if (nb == 2147483647)
+		return (2147483647);
+	if (nb <= 2)
+		return (2);
+	nb ++;
+	while (!ft_is_prime(nb))
+		nb ++;
 	return (nb);
 }

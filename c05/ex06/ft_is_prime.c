@@ -6,12 +6,12 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 18:28:58 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/12 20:25:36 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/19 17:19:16 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_prime(int nb);
-/* TODO: c05:ex06 -> Todo
+/*
 #include <stdio.h>
 int main()
 {
@@ -39,18 +39,20 @@ int main()
 
 int	ft_is_prime(int nb)
 {
+	int	prime;
 	int	i;
 
-	if (nb <= 1)
+	if (nb <= 0)
 		return (0);
-	if (nb <= 3)
-		return (1);
-	if (nb % 2 == 0 || nb % 3 == 0)
-		return (0);
-	i = 5;
-	while (i * i <= nb)
-		if (nb % i == 0 || nb % (i + 2) == 0)
-			return (0);
-		i += 6;
-	return (1);
+	i = 3;
+	if (nb % 2 == 0)
+		prime = nb == 2;
+	else
+		prime = nb != 1;
+	while (prime && i <= nb / i)
+	{
+		prime = nb % i != 0;
+		i += 2;
+	}
+	return (prime);
 }

@@ -1,41 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_stock_str.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 02:18:17 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/19 18:52:12 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/19 19:32:40 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/19 19:33:31 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#ifndef FT_STOCK_STR_H
+# define FT_STOCK_STR_H
 
-int	*ft_range(int min, int max);
-/*
-#include <stdio.h>
-int main()
+typedef struct s_stock_str
 {
-	int *list;
-	list = ft_range(5, 10);
-	for (int i = 0; i < 5; i++)
-		printf("%d ", list[i]);
-	printf("\n");
-	free(list);
-}
-*/
+	int		size;
+	char	*str;
+	char	*copy;
+}	t_stock_str;
 
-int	*ft_range(int min, int max)
-{
-	int	*ret;
-	int	*arr;
-
-	if (min >= max)
-		return (0);
-	arr = malloc(sizeof(int) * (max - min));
-	ret = arr;
-	while (min < max)
-		*arr++ = min++;
-	return (ret);
-}
+#endif

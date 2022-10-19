@@ -1,41 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 02:18:17 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/19 18:52:12 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/19 19:19:34 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/19 19:20:36 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "ft_point.h"
 
-int	*ft_range(int min, int max);
-/*
-#include <stdio.h>
-int main()
+void	set_point(t_point *point)
 {
-	int *list;
-	list = ft_range(5, 10);
-	for (int i = 0; i < 5; i++)
-		printf("%d ", list[i]);
-	printf("\n");
-	free(list);
+	point->x = 42;
+	point->y = 21;
 }
-*/
 
-int	*ft_range(int min, int max)
+int	main(void)
 {
-	int	*ret;
-	int	*arr;
+	t_point	point;
 
-	if (min >= max)
-		return (0);
-	arr = malloc(sizeof(int) * (max - min));
-	ret = arr;
-	while (min < max)
-		*arr++ = min++;
-	return (ret);
+	set_point(&point);
+	return (0);
 }

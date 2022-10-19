@@ -1,41 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 02:18:17 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/19 18:52:12 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/19 19:16:26 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/19 19:18:18 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-
-int	*ft_range(int min, int max);
-/*
 #include <stdio.h>
-int main()
-{
-	int *list;
-	list = ft_range(5, 10);
-	for (int i = 0; i < 5; i++)
-		printf("%d ", list[i]);
-	printf("\n");
-	free(list);
-}
-*/
 
-int	*ft_range(int min, int max)
-{
-	int	*ret;
-	int	*arr;
+#include "ft_abs.h"
 
-	if (min >= max)
-		return (0);
-	arr = malloc(sizeof(int) * (max - min));
-	ret = arr;
-	while (min < max)
-		*arr++ = min++;
-	return (ret);
+int	main(void)
+{
+	printf("ABS(-32) : %d\n", ABS(-32));
+	printf("ABS(32) : %d\n", ABS(32));
+	printf("ABS(0) : %d\n", ABS(0));
+	return (0);
 }
