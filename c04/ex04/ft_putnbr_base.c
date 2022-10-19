@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 23:55:55 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/20 01:54:28 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/20 02:19:09 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	kn_putchar_recur(int nbr, int base, char *base_str, int carry);
 void	ft_putnbr_base(int nbr, char *base);
 int		kn_strlen(char *str);
 int		kn_verify(char *str);
-
+/*
 int	len(char *str)
 {
 	int	i;
@@ -83,7 +83,7 @@ int	main(void)
 	printstr("\n");
 	return (0);
 }
-
+*/
 
 int	kn_strlen(char *str)
 {
