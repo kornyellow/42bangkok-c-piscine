@@ -33,159 +33,29 @@ README.md นี้ได้แรงบันดาลใจมาจาก [ap
 ## หลักสูตร
 ในตารางด้านล่างจะเป็นการบอกหลักสูตรคร่าว ๆ ของค่าย C Piscine ซึ่งบอกว่าผมทำสำเร็จเท่าไร
 
-<table>
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>หัวข้อ</th>
-			<th>ภาษา</th>
-			<th>สถานะ</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td style="text-align: center">00</td>
-			<td style="text-align: center">Shell00</td>
-			<td style="text-align: center">Shell</td>
-			<td style="text-align: end">85% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">01</td>
-			<td style="text-align: center">Shell01</td>
-			<td style="text-align: center">Shell</td>
-			<td style="text-align: end">40% 🔴</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">02</td>
-			<td style="text-align: center">C00</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">100% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">03</td>
-			<td style="text-align: center">C01</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">70% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">04</td>
-			<td style="text-align: center">C02</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">65% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">05</td>
-			<td style="text-align: center">C03</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">62% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">06</td>
-			<td style="text-align: center">C04</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">50% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">07</td>
-			<td style="text-align: center">C05</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">60% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">08</td>
-			<td style="text-align: center">C06</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">85% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">09</td>
-			<td style="text-align: center">C07</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">10</td>
-			<td style="text-align: center">C08</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">11</td>
-			<td style="text-align: center">C09</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">12</td>
-			<td style="text-align: center">C10</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">13</td>
-			<td style="text-align: center">C11</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">14</td>
-			<td style="text-align: center">C12</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">15</td>
-			<td style="text-align: center">C13</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">16</td>
-			<td style="text-align: center">Exam00</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">80% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">17</td>
-			<td style="text-align: center">Exam01</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">80% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">18</td>
-			<td style="text-align: center">Exam02</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">19</td>
-			<td style="text-align: center">Final Exam</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">20</td>
-			<td style="text-align: center">Rush00</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">96% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">21</td>
-			<td style="text-align: center">Rush01</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">110% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">22</td>
-			<td style="text-align: center">Rush02</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-		<tr>
-			<td style="text-align: center">23</td>
-			<td style="text-align: center">BSQ</td>
-			<td style="text-align: center">C</td>
-			<td style="text-align: end">??% 🟢</td>
-		</tr>
-	</tbody>
-</table>
+ **#** | **หัวข้อ** | **ภาษา** | **สถานะ**
+:---:|:---:|:---:|---:
+ 00 | Shell00 | Shell | 85% 🟢
+ 01 | Shell01 | Shell | 40% 🔴
+ 02 | C00 | C | 100% 🟢
+ 03 | C01 | C | 70% 🟢
+ 04 | C02 | C | 65% 🟢
+ 05 | C03 | C | 62% 🟢
+ 06 | C04 | C | 50% 🟢
+ 07 | C05 | C | 60% 🟢
+ 08 | C06 | C | 85% 🟢
+ 09 | C07 | C | ??% 🟢
+ 10 | C08 | C | ??% 🟢
+ 11 | C09 | C | ??% 🟢
+ 12 | C10 | C | ??% 🟢
+ 13 | C11 | C | ??% 🟢
+ 14 | C12 | C | ??% 🟢
+ 15 | C13 | C | ??% 🟢
+ 16 | Exam00 | C | 80% 🟢
+ 17 | Exam01 | C | 80% 🟢
+ 18 | Exam02 | C | ??% 🟢
+ 19 | Final Exam | C | ??% 🟢
+ 20 | Rush00 | C | 96% 🟢
+ 21 | Rush01 | C | 110% 🟢
+ 22 | Rush02 | C | ??% 🟢
+ 23 | BSQ | C | ??% 🟢
