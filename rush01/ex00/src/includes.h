@@ -1,41 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   includes.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/17 02:18:17 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/21 00:17:25 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/15 14:57:59 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/16 21:52:23 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#ifndef INCLUDES_H
+# define INCLUDES_H
 
-int	*ft_range(int min, int max);
-/*
-#include <stdio.h>
-int main()
-{
-	int *list;
-	list = ft_range(5, 10);
-	for (int i = 0; i < 5; i++)
-		printf("%d ", list[i]);
-	printf("\n");
-	free(list);
-}
-*/
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdio.h>
 
-int	*ft_range(int min, int max)
-{
-	int	*ret;
-	int	*arr;
+# define SIZE 4
 
-	if (min >= max)
-		return (0);
-	arr = malloc(sizeof(int) * (max - min));
-	ret = arr;
-	while (min < max)
-		*arr++ = min++;
-	return (ret);
-}
+# define SUCCESS 0
+# define ERROR_ARGUMENT_COUNT 1
+# define ERROR_ARGUMENT_INVALID 2
+# define ERROR_NO_SOLUTION 3
+
+#endif
