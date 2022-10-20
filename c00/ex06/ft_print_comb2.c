@@ -6,7 +6,7 @@
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 11:10:31 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/06 23:37:34 by korojrat         ###   ########.fr       */
+/*   Updated: 2022/10/21 03:57:35 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	ft_print_comb2(void);
 void	kn_print_comb2_sub(int a);
-/*
+
 int		main(void)
 {
 	ft_print_comb2();
 	return (0);
 }
-*/
+
 
 void	ft_print_comb2(void)
 {
