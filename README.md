@@ -6,7 +6,7 @@
 
 README.md นี้ได้แรงบันดาลใจมาจาก [appinha](https://github.com/appinha/42sp-piscine)
 
-![42Bangkok](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ryt9.com%2Fs%2Fprg%2F3297271&psig=AOvVaw2Xjip-CzNDhSv6uDjguaEP&ust=1666395524669000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKiCoJz97_oCFQAAAAAdAAAAABAd)
+![42Bangkok](https://www.ryt9.com/img/files/20220214/iqa311987e8d000fb460c6894490101c05.jpg)
 
 ## สิ่งที่ได้เรียนรู้ใน C Piscine
 
