@@ -143,13 +143,13 @@ README.md นี้ได้แรงบันดาลใจมาจาก [ap
 			<td>16</td>
 			<td>Exam00</td>
 			<td>C</td>
-			<td>80%🟢 </td>
+			<td>🟢 80%</td>
 		</tr>
 		<tr>
 			<td>17</td>
 			<td>Exam01</td>
 			<td>C</td>
-			<td>80%🟢 </td>
+			<td>🟢 80%</td>
 		</tr>
 		<tr>
 			<td>18</td>
@@ -167,13 +167,13 @@ README.md นี้ได้แรงบันดาลใจมาจาก [ap
 			<td>20</td>
 			<td>Rush00</td>
 			<td>C</td>
-			<td>96%🟢 </td>
+			<td>🟢 96%</td>
 		</tr>
 		<tr>
 			<td>21</td>
 			<td>Rush01</td>
 			<td>C</td>
-			<td>110%🟢 </td>
+			<td>🟢 110%</td>
 		</tr>
 		<tr>
 			<td>22</td>
