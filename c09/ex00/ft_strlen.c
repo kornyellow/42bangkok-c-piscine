@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 10:08:15 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/16 22:50:13 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/11 23:16:02 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/11 23:18:36 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c);
-/*
-int		main(void)
+int	ft_strlen(char *str)
 {
-	ft_putchar('A');
-	return (0);
-}
-*/
+	int	i;
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
+	if (*str == 0)
+		return (0);
+	i = 0;
+	while (*str != 0)
+	{
+		str ++;
+		i ++;
+	}
+	return (i);
 }

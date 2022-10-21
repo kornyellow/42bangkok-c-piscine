@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 10:08:15 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/16 22:50:13 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/07 02:55:47 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/07 15:39:56 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../includes/ft.h"
 
-void	ft_putchar(char c);
-/*
-int		main(void)
+void	ft_swap(int *a, int *b)
 {
-	ft_putchar('A');
-	return (0);
-}
-*/
+	int	temp;
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }

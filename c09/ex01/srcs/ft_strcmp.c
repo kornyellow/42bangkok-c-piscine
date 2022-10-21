@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 10:08:15 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/16 22:50:13 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/11 21:43:38 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/11 22:41:53 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "../includes/ft.h"
 
-void	ft_putchar(char c);
-/*
-int		main(void)
+int	ft_strcmp(char *s1, char *s2)
 {
-	ft_putchar('A');
-	return (0);
-}
-*/
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
+	if (!*s1 && !*s2)
+	{
+		return (0);
+	}
+	if (*s1 == *s2)
+	{
+		return (ft_strcmp(++s1, ++s2));
+	}
+	else
+	{
+		return (*s1 - *s2);
+	}
 }
