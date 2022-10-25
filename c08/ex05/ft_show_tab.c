@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: korojrat <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/20 01:33:52 by korojrat          #+#    #+#             */
-/*   Updated: 2022/10/20 01:33:54 by korojrat         ###   ########.fr       */
+/*   Created: 2022/10/19 19:26:22 by korojrat          #+#    #+#             */
+/*   Updated: 2022/10/25 11:58:54 by korojrat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	while (++i < ac)
 	{
 		arr[i].size = ft_putstr(av[i], 1);
-		arr[i].str = ft_stralloc(av[i], arr[i].size);
+		arr[i].str = av[i];
 		arr[i].copy = ft_stralloc(av[i], arr[i].size);
 		if (!arr[i].str || !arr[i].copy)
 			m_err = 1;
